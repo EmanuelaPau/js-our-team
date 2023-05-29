@@ -74,13 +74,14 @@ for (let i = 0; i < myTeam.length; i++) {
     const addMyTeamCard = document.createElement('div');
     addMyTeamCard.classList.add('my-team-card');
     myMaindDivElement.appendChild(addMyTeamCard);
+    addMyTeamCard.innerHTML = `
+        <img src="img/${myTeam[i].photo}" alt="">
+        <h3 class="my_team-name">Wayne Barnett</h3>
+        <h4 class="my_team-job">founder & CEO</h4>
+        `;
 
     for (let key in myObject) {
         console.log(`${key} : ${myObject[key]}`);
-
-        addMyTeamCard.innerHTML += `
-        <p>${myObject[key]}</p>
-        `;
 
     }
     console.log('----------');
