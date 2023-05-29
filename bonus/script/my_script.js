@@ -76,8 +76,8 @@ for (let i = 0; i < myTeam.length; i++) {
     myMaindDivElement.appendChild(addMyTeamCard);
     addMyTeamCard.innerHTML = `
         <img src="img/${myTeam[i].photo}" alt="">
-        <h3 class="my_team-name">Wayne Barnett</h3>
-        <h4 class="my_team-job">founder & CEO</h4>
+        <h3 class="my_team-name">${myTeam[i].name}</h3>
+        <h4 class="my_team-job">${myTeam[i].role}</h4>
         `;
 
     for (let key in myObject) {
