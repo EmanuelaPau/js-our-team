@@ -73,13 +73,15 @@ for (let i = 0; i < myTeam.length; i++) {
 
     const addMyTeamCard = document.createElement('div');
     addMyTeamCard.classList.add('my-team-card');
-
+    myMaindDivElement.appendChild(addMyTeamCard);
 
     for (let key in myObject) {
         console.log(`${key} : ${myObject[key]}`);
+
+        addMyTeamCard.innerHTML = `
+        <p>${myObject[key]}</p>
+        `;
+
     }
-
-    myMaindDivElement.appendChild(addMyTeamCard);
-
     console.log('----------');
 }
