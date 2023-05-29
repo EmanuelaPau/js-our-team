@@ -78,7 +78,7 @@ for (let i = 0; i < myTeam.length; i++) {
     for (let key in myObject) {
         console.log(`${key} : ${myObject[key]}`);
 
-        addMyTeamCard.innerHTML = `
+        addMyTeamCard.innerHTML += `
         <p>${myObject[key]}</p>
         `;
 
