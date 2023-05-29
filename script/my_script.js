@@ -63,3 +63,12 @@ let myTeam = [
 ]
 
 console.log(myTeam);
+
+for (let i = 0; i < myTeam.length + 1; i++) {
+    let myObject = myTeam[i];
+    console.log(myObject);
+    for (let key in myObject) {
+        console.log(`${key} : ${myObject[key]}`);
+    }
+    console.log('----------');
+}
