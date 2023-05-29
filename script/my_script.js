@@ -67,14 +67,19 @@ console.log(myMaindDivElement);
 
 console.log(myTeam);
 
-for (let i = 0; i < myTeam.length + 1; i++) {
+for (let i = 0; i < myTeam.length; i++) {
     let myObject = myTeam[i];
     console.log(myObject);
+
+    const addMyTeamCard = document.createElement('div');
+    addMyTeamCard.classList.add('my-team-card');
 
 
     for (let key in myObject) {
         console.log(`${key} : ${myObject[key]}`);
     }
+
+    myMaindDivElement.appendChild(addMyTeamCard);
 
     console.log('----------');
 }

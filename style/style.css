@@ -3,3 +3,10 @@ main {}
 .my_title {
     font-size: 4rem;
 }
+
+div.my-team-card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: aqua;
+}
